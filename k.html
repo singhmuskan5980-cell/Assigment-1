@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Unique Buttons</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 20px;
+    }
+
+    /* Base style for all buttons */
+    .custom-button {
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    /* Button 1 - Red with white text, grows on hover */
+    .button-red {
+      background-color: #e74c3c;
+      color: #fff;
+      
+    }
+
+    .button-red:hover {
+      background-color: #c0392b;
+      transform: scale(1.1);
+    }
+
+    /* Button 2 - Green border, text color changes on hover */
+    .button-green {
+      background-color: transparent;
+      border: 2px solid #2ecc71;
+      color: #2ecc71;
+    
+    }
+
+    .button-green:hover {
+      background-color: #2ecc71;
+      color: #fff;
+    }
+
+    /* Button 3 - Blue background, shadow on hover */
+    .button-blue {
+      background-color: #3498db;
+      color: #fff;
+    }
+
+    .button-blue:hover {
+      box-shadow: 0 8px 16px rgba(52, 152, 219, 0.4);
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+<body>
+
+  <button class="custom-button button-red">Red Button</button>
+  <button class="custom-button button-green">Green Button</button>
+  <button class="custom-button button-blue">Blue Button</button>
+
+</body>
+</html>
